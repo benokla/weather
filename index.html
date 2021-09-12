@@ -6,8 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 <body>
+    <div class="container">
+        <div class="searchContainer">
+            <input type="text" name="locationInput" id="locationInput" placeholder="Search" required>
+            <span class="material-icons-outlined" id="searchBtn">
+                search
+            </span>
+            <input type="button" value="°F" id="toggleBtn">
+        </div>
+    </div>
+        <p id="loc"></p>
+        <div class="load"><div class="lds-ring"><div></div><div></div><div></div><div></div></div></div>
+        <p id="temp"></p>
+        <p id="disp"></p>
+
     <script src="main.js"></script>
 </body>
 </html>
